@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Nexus - Servidor Minecraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00ff99, #00ccff);
+            padding: 30px;
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 26px;
+            color: #ffffff;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            animation: fadeInDown 1.5s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 0;
+            border-radius: 20px;
+            margin: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        nav a {
+            background: #00ff99;
+            color: #1a1a1a;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        nav a:hover {
+            background: #00cc88;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 100px;
+            background: #2b2b2b;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .section h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffcc00;
+            margin-bottom: 20px;
+            animation: fadeInLeft 1.5s ease;
+            text-align: center;
+        }
+
+        .section p, ul {
+            font-size: 20px;
+            line-height: 1.8;
+            animation: fadeInRight 2s ease;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(90deg, #00ff99, #00ccff);
+            color: #ffffff;
+            font-size: 16px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            animation: fadeIn 3s ease;
+            margin-top: 50px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+        }
+
+        .socials {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socials a {
+            background: #ff6699;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+
+        .socials a:hover {
+            background: #ff3366;
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header id="inicio">
+    Survival Nexus - Creado por Lauti8899
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#ip">Cómo Unirte</a>
+    <a href="#modo">Survival</a>
+    <a href="#reglas">Reglas</a>
+    <a href="#sociales">Redes Sociales</a>
+</nav>
+
+<div class="content">
+
+    <section class="section" id="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>Nacimos en 2025 para crear la mejor comunidad de Minecraft en habla hispana. Cada jugador importa, ¡sumate hoy!</p>
+    </section>
+
+    <section class="section" id="ip">
+        <h2>Cómo Unirte</h2>
+        <p>IP: <strong>play.survivalnexus.com</strong><br>Versiones compatibles: <strong>1.20+</strong><br>¡Empezá tu aventura ahora mismo!</p>
+    </section>
+
+    <section class="section" id="modo">
+        <h2>Modo de Juego - Survival</h2>
+        <p>Supervivencia clásica con mejoras: economía de jugadores, protecciones de terrenos, eventos diarios ¡y una comunidad increíble!</p>
+    </section>
+
+    <section class="section" id="reglas">
+        <h2>Reglas del Servidor</h2>
+        <ul>
+            <li>Respetar a todos los jugadores y staff.</li>
+            <li>Prohibido cualquier tipo de trampa o hack.</li>
+            <li>No está permitido el spam ni la publicidad.</li>
+            <li>Protegé y respetá las construcciones.</li>
+            <li>¡Divertite y ayudá a que la comunidad crezca!</li>
+        </ul>
+    </section>
+
+    <section class="section" id="sociales">
+        <h2>Seguinos en Nuestras Redes</h2>
+        <div class="socials">
+            <a href="https://discord.gg/M9UwdSn7PE" target="_blank">Discord</a>
+            <a href="https://x.com/Survival_Nexus" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/survival_nexus_/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2025 Survival Nexus - Creado por Lauti8899. ¡Todos los derechos reservados!
+</footer>
+
+</body>
+</html>
